@@ -51,8 +51,6 @@ call vrunner designer  --storage-name %razrab_storage_name% --storage-user %stor
 call vrunner designer  --storage-name %prerelease_storage_name% --storage-user %storage_user% --storage-pwd %storage_pwd% ^
                        --ibconnection %prerelease_connection_string% --db-user %db_user% --db-pwd %db_pwd%                ^
                        --v8version %v8version% --additional "/ReduceEventLogSize %current_date%"
-rem start /wait 1cv8 DESIGNER %razrab_connection_string% /N%db_user% /P%db_pwd% /ReduceEventLogSize %current_date% 
-rem start /wait 1cv8 DESIGNER %prerelease_connection_string% /N%db_user% /P%db_pwd% /ReduceEventLogSize %current_date% 
 echo ┌───────────────────────────────────────────────────────┐
 echo │                   Вакумируем журналы                  │
 echo └───────────────────────────────────────────────────────┘
